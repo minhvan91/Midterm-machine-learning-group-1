@@ -1,0 +1,41 @@
+Train: 354,324 mau, 434 cot
+
+[1] Nhan: binh thuong=342,336 | gian lan=11,988 | ty le gian lan=3.383%
+    Mo hinh doan 'tat ca binh thuong' dat accuracy = 96.617% (vo dung)
+
+[2] So cot thieu >50%: 230 | >90%: 12 | co thieu: 371
+
+[3] TransactionAmt theo nhan:
+            count    mean     std   min    25%    50%     75%       max
+isFraud                                                                
+0        342336.0  134.13  239.17  0.50  43.97  69.61  125.00  31937.39
+1         11988.0  139.96  199.28  0.29  35.27  77.00  169.95   4191.00
+
+[4] Ty le gian lan theo tap: train=3.383%, val=3.904%, test=3.441%
+
+[5] Ty le gian lan theo nhom (chi nhom >= 200 giao dich):
+    ProductCD: cao nhat = C (10.74%)
+    card4: cao nhat = discover (6.17%)
+    card6: cao nhat = credit (6.28%)
+    DeviceType: cao nhat = mobile (9.13%)
+    P_emaildomain: cao nhat = outlook.com (8.48%)
+
+[6] 31 cot dang chu. Nhieu gia tri nhat:
+DeviceInfo       1446
+id_33             163
+id_31             101
+id_30              71
+R_emaildomain      60
+P_emaildomain      59
+ProductCD           5
+card6               4
+
+[7] Top 5 tuong quan voi nhan:
+V257    0.359
+V244    0.344
+V242    0.337
+V246    0.335
+V201    0.331
+    So cap cot co |tuong quan| > 0.95: 224 -> nhieu cot du thua (dac biet nhom V1..V339)
+
+[8] So dong trung lap (bo TransactionID): 1

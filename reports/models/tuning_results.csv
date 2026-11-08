@@ -1,0 +1,18 @@
+model,strategy,params,auc_roc,auc_pr,f1_macro,train_time_s
+LogisticRegression,class_weight,"{'C': 0.01, 'penalty': 'l2'}",0.8761986868337923,0.4848694900311151,0.5907075482239942,58.6
+LogisticRegression,class_weight,"{'C': 0.1, 'penalty': 'l2'}",0.87504902670627,0.48375415329501825,0.5899133214357416,81.3
+LogisticRegression,class_weight,"{'C': 1.0, 'penalty': 'l2'}",0.8747203020662875,0.48362705666889255,0.5899412135369786,96.3
+LogisticRegression,class_weight,"{'C': 10.0, 'penalty': 'l2'}",0.8747467593237044,0.4832049470939607,0.5898920923363524,103.5
+LogisticRegression,class_weight,"{'C': 0.1, 'penalty': 'l1', 'solver': 'saga', 'max_iter': 300}",0.8758731007208433,0.48444064446488516,0.5900874985551045,359.8
+LogisticRegression,class_weight,"{'C': 1.0, 'penalty': 'l1', 'solver': 'saga', 'max_iter': 300}",0.8757915439223138,0.4844890878617088,0.59034790791469,214.8
+RandomForest,undersampling,"{'n_estimators': 200, 'max_depth': 12, 'min_samples_split': 20, 'min_samples_leaf': 8}",0.8849313120317328,0.4717977292068958,0.6039981289150015,4.7
+RandomForest,undersampling,"{'n_estimators': 300, 'max_depth': 15, 'min_samples_split': 10, 'min_samples_leaf': 4}",0.8946526038184281,0.4912902257025775,0.6159579324862872,7.6
+RandomForest,undersampling,"{'n_estimators': 300, 'max_depth': 20, 'min_samples_split': 5, 'min_samples_leaf': 2}",0.9024286843202763,0.5031901482965832,0.6257686673398776,8.3
+RandomForest,undersampling,"{'n_estimators': 500, 'max_depth': 18, 'min_samples_split': 10, 'min_samples_leaf': 4}",0.8983074515107559,0.4970679985201697,0.6182161263720709,15.9
+RandomForest,undersampling,"{'n_estimators': 400, 'max_depth': None, 'min_samples_split': 10, 'min_samples_leaf': 4}",0.9030125955710862,0.5030333648495947,0.6173228481644695,13.4
+XGBoost,undersampling,"{'n_estimators': 300, 'max_depth': 5, 'learning_rate': 0.1, 'subsample': 0.8, 'colsample_bytree': 0.8, 'reg_alpha': 0.0, 'reg_lambda': 1.0}",0.9112565296577229,0.5428634657335903,0.6419069521356726,5.4
+XGBoost,undersampling,"{'n_estimators': 500, 'max_depth': 7, 'learning_rate': 0.05, 'subsample': 0.8, 'colsample_bytree': 0.8, 'reg_alpha': 0.1, 'reg_lambda': 1.0}",0.9200809345580769,0.5545982583185503,0.65627545277145,13.5
+XGBoost,undersampling,"{'n_estimators': 700, 'max_depth': 7, 'learning_rate': 0.03, 'subsample': 0.7, 'colsample_bytree': 0.7, 'reg_alpha': 0.5, 'reg_lambda': 2.0}",0.9202797165355759,0.5571255373678774,0.6557438162297686,18.6
+XGBoost,undersampling,"{'n_estimators': 500, 'max_depth': 9, 'learning_rate': 0.05, 'subsample': 0.9, 'colsample_bytree': 0.9, 'reg_alpha': 0.01, 'reg_lambda': 0.5}",0.9227317335352446,0.5638474522328456,0.6634032316326739,19.7
+XGBoost,undersampling,"{'n_estimators': 800, 'max_depth': 6, 'learning_rate': 0.02, 'subsample': 0.8, 'colsample_bytree': 0.6, 'reg_alpha': 1.0, 'reg_lambda': 3.0}",0.9148829232824356,0.5445289074123612,0.646288728228889,16.8
+XGBoost,undersampling,"{'n_estimators': 1000, 'max_depth': 8, 'learning_rate': 0.01, 'subsample': 0.8, 'colsample_bytree': 0.8, 'reg_alpha': 0.1, 'reg_lambda': 1.0}",0.9192164858056308,0.5457507386881577,0.654410352116483,34.5

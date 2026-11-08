@@ -1,0 +1,19 @@
+# Data files (qua lon de push len GitHub)
+*.parquet
+data/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Models (qua lon)
+models/*.pkl
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store
